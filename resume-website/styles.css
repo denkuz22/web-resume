@@ -1,0 +1,298 @@
+/* Global styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Georgia, serif";
+  line-height: 1.6;
+  background: linear-gradient(to right,#ffffff,#dff4f9,#acf5f9, #befff9 );
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right,#ffffff,#dff4f9,#acf5f9, #befff9 );
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0 0 2% 2%;
+  font-family: "Georgia, serif";
+}
+
+nav {
+  display: inline-block;
+  color: #333;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-family: "Georgia, serif";
+}
+
+.nav-links li a {
+  color: black;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 36px;
+  text-align: center;
+}
+
+header p {
+  margin: 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+header ul {
+  display: flex;
+  margin-top: 20px;
+  text-align: center;
+
+}
+
+header li {
+  margin-right: 20px;
+}
+
+header li:last-child {
+  margin-right: 0;
+}
+
+header li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: "Georgia, serif";
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* #personal-img {
+  border: 5px solid #fff;
+} */
+
+
+#about {
+  margin-top: 40px;
+  text-align: justify;
+}
+
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+section ul {
+  margin-left: 20px;
+  font-family: "Georgia, serif";
+}
+
+section li {
+  margin-bottom: 10px;
+}
+
+section h3 {
+  margin-bottom: 10px;
+}
+
+section p {
+  margin-bottom: 10px;
+}
+
+section form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+section form input,
+section form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+}
+
+section form button {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+section form button:hover {
+  background: #444;
+}
+
+
+#skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+#skills-list li {
+  width: 30%;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+#job_tasks {
+  list-style-type: none;
+}
+
+#job-icon {
+  float: left;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.teams-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}ß
+
+.teams-row img {
+  max-width: 100%;
+  height: auto;
+}
+
+.devicon-atom-original{
+  font-family: "Georgia, serif";
+}
+
+#ryerson {
+  float: left;
+  object-fit: cover;
+}
+
+
+.social-row {
+  display: flex;
+  width: 100%;
+
+}
+
+.social-row img {
+  width: calc(20% - 1em);
+}
+
+
+.blink {
+  animation: color-change 1s infinite;
+  text-decoration: none;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes color-change {
+  0% { color: #F9A620; }
+  50% { color: #C0272D; }
+  100% { color: #F9A620; }
+}
+
+#gallery {
+  margin: 2em auto;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.gallery-row img {
+  width: calc(33.33% - 1em);
+  border-radius: 10px;
+}
+
+#gallery-personal {
+  margin: 2em auto;
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-row-personal {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.gallery-row-personal img {
+  width: calc(33.33% - 1em);
+  object-fit: cover;
+  margin: 10px;
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.gallery-row-personal img:hover {
+  transform: scale(1.3);
+}
